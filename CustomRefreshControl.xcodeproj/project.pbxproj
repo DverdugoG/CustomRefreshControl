@@ -13,6 +13,10 @@
 		8A4029CD1E87020E00A9BA03 /* CustomRefreshControl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A4029CB1E87020E00A9BA03 /* CustomRefreshControl.xcdatamodeld */; };
 		8A4029CF1E87020E00A9BA03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4029CE1E87020E00A9BA03 /* Assets.xcassets */; };
 		8A4029D21E87020E00A9BA03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4029D01E87020E00A9BA03 /* LaunchScreen.storyboard */; };
+		8A4029DA1E87025700A9BA03 /* CustomFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4029D91E87025700A9BA03 /* CustomFooterView.swift */; };
+		8AEB552B1E87D94D00D3B092 /* CustomFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AEB552A1E87D94D00D3B092 /* CustomFooterView.xib */; };
+		8AEB552F1E87F7AB00D3B092 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEB552E1E87F7AB00D3B092 /* CustomCollectionViewCell.swift */; };
+		8AEB55311E87F9B300D3B092 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AEB55301E87F9B300D3B092 /* CustomCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		8A4029CE1E87020E00A9BA03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A4029D11E87020E00A9BA03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A4029D31E87020E00A9BA03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A4029D91E87025700A9BA03 /* CustomFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFooterView.swift; sourceTree = "<group>"; };
+		8AEB552A1E87D94D00D3B092 /* CustomFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomFooterView.xib; sourceTree = "<group>"; };
+		8AEB552E1E87F7AB00D3B092 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		8AEB55301E87F9B300D3B092 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				8A4029C41E87020E00A9BA03 /* AppDelegate.swift */,
+				8A4029D91E87025700A9BA03 /* CustomFooterView.swift */,
+				8AEB552A1E87D94D00D3B092 /* CustomFooterView.xib */,
 				8A4029C61E87020E00A9BA03 /* ViewController.swift */,
+				8AEB552E1E87F7AB00D3B092 /* CustomCollectionViewCell.swift */,
+				8AEB55301E87F9B300D3B092 /* CustomCollectionViewCell.xib */,
 				8A4029C81E87020E00A9BA03 /* Main.storyboard */,
 				8A4029CE1E87020E00A9BA03 /* Assets.xcassets */,
 				8A4029D01E87020E00A9BA03 /* LaunchScreen.storyboard */,
@@ -94,7 +106,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = SliCode;
 				TargetAttributes = {
 					8A4029C01E87020E00A9BA03 = {
@@ -127,8 +139,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A4029D21E87020E00A9BA03 /* LaunchScreen.storyboard in Resources */,
+				8AEB55311E87F9B300D3B092 /* CustomCollectionViewCell.xib in Resources */,
 				8A4029CF1E87020E00A9BA03 /* Assets.xcassets in Resources */,
 				8A4029CA1E87020E00A9BA03 /* Main.storyboard in Resources */,
+				8AEB552B1E87D94D00D3B092 /* CustomFooterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +155,9 @@
 			files = (
 				8A4029CD1E87020E00A9BA03 /* CustomRefreshControl.xcdatamodeld in Sources */,
 				8A4029C71E87020E00A9BA03 /* ViewController.swift in Sources */,
+				8A4029DA1E87025700A9BA03 /* CustomFooterView.swift in Sources */,
 				8A4029C51E87020E00A9BA03 /* AppDelegate.swift in Sources */,
+				8AEB552F1E87F7AB00D3B092 /* CustomCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +186,9 @@
 		8A4029D41E87020E00A9BA03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALTERNATE_OWNER = slicode;
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -185,6 +203,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -207,11 +226,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_OWNER = slicode;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -220,7 +241,9 @@
 		8A4029D51E87020E00A9BA03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALTERNATE_OWNER = slicode;
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -235,6 +258,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -251,9 +275,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_OWNER = slicode;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -303,6 +329,7 @@
 				8A4029D81E87020E00A9BA03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
